@@ -50,7 +50,7 @@ public class PermissionsRequest  {
         }
         else {
             //权限允许
-            Log.e("====","凉凉");
+            Log.e("====","权限允许");
             listener.onSucceed(requestCode,permission);
         }
 
@@ -85,7 +85,7 @@ public class PermissionsRequest  {
                     }
                     //返回false则表示不再询问
                     else {
-                        Log.e("弹弹弹","不弹");
+                        Log.e("这里勾选了不再询问，","要提示用户手动去设置");
                         //该弹Dialog了
                     }
                 }
